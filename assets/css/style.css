@@ -1,0 +1,155 @@
+:root {
+   --amarelo: #f7b600;
+   --cinza-escuro: #4e4e4e;
+   --cinza-titulo: #565656;
+   --cinza: #cccccc;
+   --cinza-fundo: #E6E6E6;
+   --branco: #fff;
+}
+
+body {
+   font-family: "Trebuchet MS", Helvetica, sans-serif;
+   background-color: var(--cinza-fundo);
+   box-sizing: border-box;
+}
+
+body, ul {
+   margin: 0;
+   padding: 0;
+}
+
+header {
+   background-color: var(--amarelo);
+   padding: 15px;
+   text-align: center;
+}
+
+header h1, header nav {
+   padding: 10px;
+}
+
+header h1 {
+   font-size: 2.5em;
+   color: var(--cinza-escuro);
+   font-weight: bold;
+   margin: 0;
+}
+
+header h1 span {
+   color: var(--branco);
+}
+
+header nav ul,
+main aside ul {
+   list-style: none;
+}
+
+header nav li {
+   display: inline;
+}
+
+a {
+   text-decoration: none;
+   color: var(--amarelo);
+}
+
+header nav a:link,
+header nav a:visited {
+   color: var(--branco);
+   padding: 8px 12px;
+}
+
+header nav a:hover {
+   background-color: var(--branco);
+   color: var(--amarelo);
+   transition: all .3s;
+}
+
+main {
+   padding: 15px 0;
+}
+
+main > section article,
+main > aside section {
+   background-color: var(--branco);
+   margin-bottom: 20px;
+}
+
+main > section {
+   width: 660px;
+   float: left;
+}
+
+main > section article {
+   padding: 20px;
+}
+
+section article h2 {
+   color: var(--amarelo);
+}
+
+main article h2,
+main p,
+main aside h3 {
+   margin: 0;
+}
+
+main article p.data-postagem {
+   font-size: 0.8em;
+   margin-top: 5px;
+   padding-bottom: 10px;
+   border-bottom: 1px solid var(--cinza-fundo);
+   margin-bottom: 5px;
+}
+
+main article img {
+   width: 100%;
+}
+
+main a:hover {
+   text-decoration: underline;
+}
+
+main > aside {
+   width: 240px;
+   float: right;
+}
+
+main > aside section {
+   padding: 10px;
+}
+
+main > aside section.posts-recentes li {
+   padding: 5px;
+}
+
+section.posts-recentes li:not(:last-child) {
+   border-bottom: 1px dashed var(--cinza);
+}
+
+main aside h3 {
+   font-size: 1.17em;
+   padding: 5px;
+   background-color: var(--cinza);
+   color: var(--cinza-titulo);
+}
+
+main section.posts-recentes li {
+   font-size: 0.8em;
+}
+
+footer {
+   clear: both;
+   background-color: var(--cinza);
+   padding: 15px;
+   text-align: center;
+}
+
+footer p {
+   margin: 0;
+}
+
+.container {
+   width: 920px;
+   margin: 0 auto;
+}
